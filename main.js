@@ -36,6 +36,7 @@ function switchTurn()
 	setMessage("It's " + document.turn + "'s turn.'")
 }
 
+//compares values from boxes to specific rows that we pass in.
 function checkRow(a, b, c, move)
 {
 	var result = false;

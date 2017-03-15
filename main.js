@@ -25,15 +25,21 @@ function nextMove(square)
 
 function switchTurn() 
 {
-	if(document.turn == "X") 
+	if(checkForWinner(document.turn))
+		{
+			setMessage("Congrats " + document.turn + " , you won!")
+		}
+	else if(document.turn == "X") 
 	{
 		document.turn = "O";
+		setMessage("It's " + document.turn + "'s turn.'")
 	}
 		else 
 		{
 			document.turn = "X"; 
+			setMessage("It's " + document.turn + "'s turn.'")
 		}
-	setMessage("It's " + document.turn + "'s turn.'")
+	
 }
 
 // checks each row for input that matches the move. 

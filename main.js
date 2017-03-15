@@ -36,6 +36,7 @@ function switchTurn()
 	setMessage("It's " + document.turn + "'s turn.'")
 }
 
+// checks each row for input that matches the move. 
 function checkForWinner(move)
 {
 	var result = false;

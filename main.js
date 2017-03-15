@@ -38,9 +38,12 @@ function switchTurn()
 
 function checkRow(a, b, c, move)
 {
-
+	var result = false;
+	if (getBox(a) == move && getBox(b) == move && getBox(c) == move)
+		result = true;
 }
 
+//gets the values from the boxes.
 function getBox(number)
 {
 	return document.getElementById("s" + number).innerText;

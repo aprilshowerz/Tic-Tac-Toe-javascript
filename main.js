@@ -73,6 +73,10 @@
 
 function startGame()
 {
+	for(var i = 1; i <= 9; i++)
+	{
+		clearBox(i);
+	}
 	document.turn = "X";
 	document.winner = null;
 	setMessage(document.turn + " get's to start.")
@@ -109,7 +113,8 @@ function switchTurn()
 	}
 	else if(document.turn == "X")
 	{
-	setMessage("It's " + document.turn + "'s turn.")
+		document.turn = "O";
+		setMessage("It's " + document.turn + "'s turn.")
 	}
 	else
 	{
@@ -130,7 +135,7 @@ function checkForWinner(move)
 	(checkRow(1, 5, 9, move) ||
 	(checkRow(3, 5, 7, move) ||
 	{
-	result = true;
+		result = true;
 	}
 	return result;
 }

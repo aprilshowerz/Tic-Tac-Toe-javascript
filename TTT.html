@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Tic Tac Toe</title>
+
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+
 		<style>
 			
 			@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Raleway');
@@ -37,8 +43,9 @@
 		</style>
 	</head>
 		<body onload="startGame();">
-			<h1>Tic Tac Toe</h1>
-			<div id="message">Messages Here.</div>
+			<h1>Tic-Tac-Toe</h1>
+			<div id="message">Messages Here</div>
+				<div class="container">
 				<table border="1">
 					<tr>
 						<td class="Square" id="s1" onClick="nextMove(this)"></td>
@@ -56,11 +63,16 @@
 						<td class="Square" id="s9" onClick="nextMove(this)"></td>
 					</tr>
 				</table>
-		
+				</div>
 <a href="javascript: startGame();" id="restart">Start Over</a>
-<script src="public_html/main.js"></script>
-<hr>
-<footer>
+<script src="/main.js"></script>
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <footer>
 <ul class="list-inline">
 	<li><a href="http://aprilblair.x10host.com">Home</a></li>
 	<li><a href="http://aprilblair.x10host.com/tattoo-portfolio.html">Tattoo Page</a></li>
